@@ -1,0 +1,15 @@
+<body>  
+<h2 align="center" style="color:Black">Show</h2>
+<div>
+<table class="table table-striped">
+  <tbody>   
+      <tr>
+        <td><h4 align="center" style="color:Black"><%= @boat.name %></h4></td>
+        <td><h4 align="center" style="color:Black"><%= @boat.color %></h4></td>
+        <%= link_to 'Edit', edit_boat_path(@boat) %> |
+	<%= link_to 'Back', boats_path %>
+      </tr>    
+  </tbody>
+</table>
+</div>     
+</body>

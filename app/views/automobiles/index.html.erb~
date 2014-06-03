@@ -1,0 +1,38 @@
+
+<body>  
+<h2 align="center" style="color:Black">Machines</h2>
+<div>
+<table class="table table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Color</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @automobiles.each do |automobile| %>
+      <tr>
+        <td><%= automobile.name %></td>
+        <td><%= automobile.color %></td>
+        <td>
+
+ 	<%= link_to 'Show', automobile %>
+	<%= link_to 'Edit', edit_automobile_path(automobile) %>
+ 	<%= link_to 'Destroy', automobile, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+	</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+</div>
+<div>
+
+</div>
+<br>
+
+<%= link_to 'New Automobile', new_automobile_path %>|
+<%= link_to 'Back', 'welcome/index' %>
+</body>

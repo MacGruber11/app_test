@@ -1,0 +1,37 @@
+<body>  
+<h2 align="center" style="color:Black">PLanes</h2>
+<div>
+<table class="table table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Color</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @planes.each do |plane| %>
+      <tr>
+        <td><%= plane.name %></td>
+        <td><%= plane.color %></td>
+        <td>
+
+ 	<%= link_to 'Show', plane %>
+	<%= link_to 'Edit', edit_plane_path(plane) %>
+ 	<%= link_to 'Destroy', plane, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+	</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+</div>
+<div>
+
+</div>
+<br>
+
+<%= link_to 'New Plane', new_plane_path %> |
+<%= link_to 'Back', 'welcome/index' %>
+</body>

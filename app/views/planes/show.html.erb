@@ -1,0 +1,15 @@
+<body>  
+<h2 align="center" style="color:Black">Show</h2>
+<div>
+<table class="table table-striped">
+  <tbody>   
+      <tr>
+        <td><h4 align="center" style="color:Black"><%= @plane.name %></h4></td>
+        <td><h4 align="center" style="color:Black"><%= @plane.color %></h4></td>
+        <%= link_to 'Edit', edit_plane_path(@plane) %> |
+	<%= link_to 'Back', planes_path %>
+      </tr>    
+  </tbody>
+</table>
+</div>     
+</body>

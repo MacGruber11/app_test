@@ -1,0 +1,18 @@
+  
+<body>  
+<h2 align="center" style="color:Black">Category</h2>
+<div>
+<table class="table table-striped">
+  <tbody>   
+      <tr>
+        <td><h4 align="center" style="color:Black"><%= link_to "Machine", automobiles_path %></h4></td>
+        <td><h4 align="center" style="color:Black"><%= link_to 'Boats', boats_path %></h4></td>
+        <td><h4 align="center" style="color:Black"><%= link_to 'Planes', planes_path %></h4></td>
+      </tr>    
+  </tbody>
+</table>
+</div>     
+</body>
+             
+  
+

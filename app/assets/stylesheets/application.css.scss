@@ -1,0 +1,51 @@
+@import "bootstrap";
+input[type=submit] {@extend .btn;}
+input {@extend .table;}
+input {@extend .row;}
+input {@extend .span;}
+input {@extend .span*;}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin:0 25% 0 25%;
+  width:50%;
+}
+
+  div {  
+    padding: 50px; 
+    margin-top: 1%; 
+   }
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
